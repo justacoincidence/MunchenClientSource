@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{16FF3CE1-1524-43EE-B967-64B748BDE42F}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>MünchenClient</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MelonLoader">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.UI.Elements">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Elements.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK2">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK2.dll</HintPath>
+    </Reference>
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCCore-Standalone">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCCore-Standalone.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Transmtn">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Transmtn.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon-DotNet">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Photon-DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK3A">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK3A.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDKBase">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDKBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="VRCSDK3">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK3.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="VRC.UI.Core">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DataModel">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\DataModel.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCCore-Editor">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCCore-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="Il2CppSystem">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Il2CppSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionMenuAPI\CustomActionMenu.cs" />
+    <Compile Include="AntiShaderCrashAPI\AntiShaderCrashProxy.cs" />
+    <Compile Include="CustomAvatarListAPI\CustomAvatarList.cs" />
+    <Compile Include="CustomAvatarListAPI\CustomMenuButton.cs" />
+    <Compile Include="MenuPanelAPI\MenuPanelAPI.cs" />
+    <Compile Include="MenuPanelAPI\MenuPanelButton.cs" />
+    <Compile Include="MunchenClient\Config\ColorConfig.cs" />
+    <Compile Include="MunchenClient\Config\Configuration.cs" />
+    <Compile Include="MunchenClient\Config\CustomContractResolver.cs" />
+    <Compile Include="MunchenClient\Config\Modules\AntiCrashConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\AuthKeyConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\AvatarCalibrationsConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\AvatarHistoryConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\GeneralConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\GlobalDynamicBonesConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\InstanceHistoryConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\LanguageConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\LovenseConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\ModerationsConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\TestedAssetBundlesConfig.cs" />
+    <Compile Include="MunchenClient\Config\Modules\UploadQueueConfig.cs" />
+    <Compile Include="MunchenClient\Core\AssetLoader.cs" />
+    <Compile Include="MunchenClient\Core\Compatibility\CompatibilityLayer.cs" />
+    <Compile Include="MunchenClient\Core\Compatibility\EngineCompatibilityChecker.cs" />
+    <Compile Include="MunchenClient\Core\Compatibility\OculusCompatibilityChecker.cs" />
+    <Compile Include="MunchenClient\Core\Compatibility\UnityEngineOffsets.cs" />
+    <Compile Include="MunchenClient\Core\DependencyDownload.cs" />
+    <Compile Include="MunchenClient\Core\DependencyDownloader.cs" />
+    <Compile Include="MunchenClient\Core\LanguageManager.cs" />
+    <Compile Include="MunchenClient\Core\MunchenClient.cs" />
+    <Compile Include="MunchenClient\Core\MunchenClientLocal.cs" />
+    <Compile Include="MunchenClient\Core\PerformanceProfiler.cs" />
+    <Compile Include="MunchenClient\Menu\AdminPanelMenu.cs" />
+    <Compile Include="MunchenClient\Menu\FunMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Fun\ApplicationBotIndividualMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Fun\ApplicationBotIndividualOptionsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Fun\ApplicationBotsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Fun\MurderAmongUsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Fun\PortableMirrorMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Fun\UdonManipulatorMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Fun\UdonManipulatorOptionsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\MainClientMenu.cs" />
+    <Compile Include="MunchenClient\Menu\MediaControlsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\MicrophoneMenu.cs" />
+    <Compile Include="MunchenClient\Menu\MovementMenu.cs" />
+    <Compile Include="MunchenClient\Menu\NetworkedEmotesMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Others\ActionWheelMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Others\UserInfoMenu.cs" />
+    <Compile Include="MunchenClient\Menu\PhotonExploitsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\PlayerMenu.cs" />
+    <Compile Include="MunchenClient\Menu\PlayerOptions\AdminUserModerationMenu.cs" />
+    <Compile Include="MunchenClient\Menu\PlayerOptions\GlobalDynamicBonesPlayerPermissionsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\PlayerOptions\LovensePermissionsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\PlayerOptions\PlayerApplicationBotMenu.cs" />
+    <Compile Include="MunchenClient\Menu\PlayerOptions\PlayerAttachMenu.cs" />
+    <Compile Include="MunchenClient\Menu\PlayerOptions\PlayerOptionsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Player\AvatarHistoryMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Player\AvatarHistoryWorldOptions.cs" />
+    <Compile Include="MunchenClient\Menu\Player\FlashlightBoneSelectorMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Player\FlashlightMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Player\GlobalDynamicBonesMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Player\GlobalDynamicBonesPermissionMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Player\LovenseMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Player\NameplateMenu.cs" />
+    <Compile Include="MunchenClient\Menu\ProtectionsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\AntiCrashMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\AntiExploitMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\ModerationMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\BlockMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\FriendRequestMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\InstanceMasterMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\InstanceSwitchMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\InviteMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\InviteRequestDeniedMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\InviteRequestMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\JoinMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\LeaveMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\MicOffMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\MuteMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\OfflineMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\OnlineMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\VotekickMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\Moderation\WarnMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\PortalsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Protections\SpoofersMenu.cs" />
+    <Compile Include="MunchenClient\Menu\SettingsMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Settings\ColorChangerMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Settings\DisableFeaturesMenu.cs" />
+    <Compile Include="MunchenClient\Menu\Settings\PerformanceMenu.cs" />
+    <Compile Include="MunchenClient\Menu\VideoPlayerMenu.cs" />
+    <Compile Include="MunchenClient\Menu\WorldMenu.cs" />
+    <Compile Include="MunchenClient\Menu\World\InstanceHistoryMenu.cs" />
+    <Compile Include="MunchenClient\Menu\World\InstanceHistoryWorldOptions.cs" />
+    <Compile Include="MunchenClient\Menu\World\WorldTweaksMenu.cs" />
+    <Compile Include="MunchenClient\Misc\HudNotification.cs" />
+    <Compile Include="MunchenClient\Misc\Mirror.cs" />
+    <Compile Include="MunchenClient\Misc\MunchenCustomRankFixer.cs" />
+    <Compile Include="MunchenClient\Misc\MunchenLovenseBoneSystem.cs" />
+    <Compile Include="MunchenClient\Misc\PortableMirror.cs" />
+    <Compile Include="MunchenClient\Misc\UserInterface.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\ModuleComponent.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\ModuleManager.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AntiAssetBundleCrasher\AntiAssetBundleCrashHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AntiAssetBundleCrasher\AssetBundleDownloadHandlerVTablePrefix.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AntiAssetBundleCrasher\AssetBundleDownloadHandlerWrapper.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AntiInstanceLockHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AntiPortalHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AntiShaderCrashHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\ApplicationBotHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AvatarFavoritesHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AvatarHistoryHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AvatarParsingData.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\AvatarRendererData.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\CameraFeaturesHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\DPSType.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\DynamicBonePermission.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\DynamicBonePermissionOverride.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\FavoriteAvatar.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\FlashlightHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\FlashlightOffsets.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\FlashlightStruct.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\GeneralHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\GlobalAvatarDatabaseHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\GlobalDynamicBonesHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\InstanceHistoryHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\KeybindHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\LovenseBoneType.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\LovenseHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\LovenseType.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\MenuColorHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\MimicHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\ModerationHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\OriginalBoneSettings.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\PlayerEventsHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\PlayerHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\PlayerLovensePermissions.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\PlayerTargetHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\PortalTracker.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\ProtectionsHandler.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\SavedAvatar.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\SavedInstance.cs" />
+    <Compile Include="MunchenClient\ModuleSystem\Modules\StressRelieverHandler.cs" />
+    <Compile Include="MunchenClient\Patching\PatchComponent.cs" />
+    <Compile Include="MunchenClient\Patching\Patcher.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\ActionMenuPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\AntiCrashPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\AssetManagementPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\AvatarPerformancePatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\BatchModePatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\CursorPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\DownloaderPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\EventHandlerPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\FinalIKPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\ImageDownloadContainer.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\ImageDownloaderPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\NetworkManagerPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\NotificationPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\ObjectTriggerType.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\PhotonPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\PlayerState.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\PortalsPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\QuickMenuPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\SteamworksPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\UdonPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\UnityEnginePatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VideoPlayerPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCAPIPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCAvatarManagerPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCNetworkingClientPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCNotification.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCNotificationDetails.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCPlayerPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCToolsPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCTrackingSteamPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCUIManagerPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCUser.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCWebSocketContent.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCWebSocketObject.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\VRCWorld.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\WebSocketPatch.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\WorldTriggerFilter.cs" />
+    <Compile Include="MunchenClient\Patching\Patches\WorldTriggerType.cs" />
+    <Compile Include="MunchenClient\Patching\PatchManager.cs" />
+    <Compile Include="MunchenClient\Security\AntiBreakpoint.cs" />
+    <Compile Include="MunchenClient\Security\AntiKernelDebug.cs" />
+    <Compile Include="MunchenClient\Security\AntiLeak.cs" />
+    <Compile Include="MunchenClient\Security\AntiRemoteDebugger.cs" />
+    <Compile Include="MunchenClient\Security\DebugObjectInformationClass.cs" />
+    <Compile Include="MunchenClient\Security\HideFromKernel.cs" />
+    <Compile Include="MunchenClient\Security\NtStatus.cs" />
+    <Compile Include="MunchenClient\Security\ProcessBlacklist.cs" />
+    <Compile Include="MunchenClient\Security\PROCESSINFOCLASS.cs" />
+    <Compile Include="MunchenClient\Security\SYSTEM_INFORMATION_CLASS.cs" />
+    <Compile Include="MunchenClient\Security\SYSTEM_KERNEL_DEBUGGER_INFORMATION.cs" />
+    <Compile Include="MunchenClient\Security\ThreadAccess.cs" />
+    <Compile Include="MunchenClient\Security\ThreadInformationClass.cs" />
+    <Compile Include="MunchenClient\Utils\AntiCrashClothPostProcess.cs" />
+    <Compile Include="MunchenClient\Utils\AntiCrashDynamicBoneColliderPostProcess.cs" />
+    <Compile Include="MunchenClient\Utils\AntiCrashDynamicBonePostProcess.cs" />
+    <Compile Include="MunchenClient\Utils\AntiCrashLightSourcePostProcess.cs" />
+    <Compile Include="MunchenClient\Utils\AntiCrashMaterialPostProcess.cs" />
+    <Compile Include="MunchenClient\Utils\AntiCrashParticleSystemPostProcess.cs" />
+    <Compile Include="MunchenClient\Utils\AntiCrashRendererPostProcess.cs" />
+    <Compile Include="MunchenClient\Utils\AntiCrashShaderPostProcess.cs" />
+    <Compile Include="MunchenClient\Utils\AntiCrashUtils.cs" />
+    <Compile Include="MunchenClient\Utils\AudioUtils.cs" />
+    <Compile Include="MunchenClient\Utils\BypassUtils.cs" />
+    <Compile Include="MunchenClient\Utils\CachedCalibration.cs" />
+    <Compile Include="MunchenClient\Utils\CacheUtils.cs" />
+    <Compile Include="MunchenClient\Utils\ConsoleEntry.cs" />
+    <Compile Include="MunchenClient\Utils\ConsoleUtils.cs" />
+    <Compile Include="MunchenClient\Utils\Crc32.cs" />
+    <Compile Include="MunchenClient\Utils\CustomRankInfo.cs" />
+    <Compile Include="MunchenClient\Utils\DataProtector.cs" />
+    <Compile Include="MunchenClient\Utils\Event1Wrapper.cs" />
+    <Compile Include="MunchenClient\Utils\Event7Wrapper.cs" />
+    <Compile Include="MunchenClient\Utils\EventCodes.cs" />
+    <Compile Include="MunchenClient\Utils\FastMethodInfo.cs" />
+    <Compile Include="MunchenClient\Utils\GeneralUtils.cs" />
+    <Compile Include="MunchenClient\Utils\HttpClientCustom.cs" />
+    <Compile Include="MunchenClient\Utils\HttpClientWrapper.cs" />
+    <Compile Include="MunchenClient\Utils\LoggedRelativeSum.cs" />
+    <Compile Include="MunchenClient\Utils\LovenseConnectAPI.cs" />
+    <Compile Include="MunchenClient\Utils\LovenseConnectionState.cs" />
+    <Compile Include="MunchenClient\Utils\LovenseDevice.cs" />
+    <Compile Include="MunchenClient\Utils\LovenseDeviceType.cs" />
+    <Compile Include="MunchenClient\Utils\MainUtils.cs" />
+    <Compile Include="MunchenClient\Utils\MathUtils.cs" />
+    <Compile Include="MunchenClient\Utils\MiscUtils.cs" />
+    <Compile Include="MunchenClient\Utils\ModerationCodes.cs" />
+    <Compile Include="MunchenClient\Utils\PhotonUtils.cs" />
+    <Compile Include="MunchenClient\Utils\PlayerBlockedEvents.cs" />
+    <Compile Include="MunchenClient\Utils\PlayerInformation.cs" />
+    <Compile Include="MunchenClient\Utils\PlayerRankStatus.cs" />
+    <Compile Include="MunchenClient\Utils\PlayerUtils.cs" />
+    <Compile Include="MunchenClient\Utils\ProgramUtils.cs" />
+    <Compile Include="MunchenClient\Utils\SerializationUtils.cs" />
+    <Compile Include="MunchenClient\Utils\ShaderUtils.cs" />
+    <Compile Include="MunchenClient\Utils\UnmanagedUtils.cs" />
+    <Compile Include="MunchenClient\Utils\WorldUtils.cs" />
+    <Compile Include="MunchenClient\Wrappers\DelegateWrappers.cs" />
+    <Compile Include="MunchenClient\Wrappers\GeneralWrappers.cs" />
+    <Compile Include="MunchenClient\Wrappers\PlayerWrappers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerAPI\Core\ServerAPICore.cs" />
+    <Compile Include="ServerAPI\Core\TempUploadContainer.cs" />
+    <Compile Include="ServerAPI\Utils\JsonParser.cs" />
+    <Compile Include="SharpNeatLib\Maths\FastRandom.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuButtonBase.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuButtonRow.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuHeader.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuIndicator.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuMunchenPage.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuNestedMenu.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuPageButton.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuPatches.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenus.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuSingleButton.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuSliderButton.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuSpacers.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuTemplates.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuToggleButton.cs" />
+    <Compile Include="UnchainedButtonAPI\QuickMenuUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MünchenClient.AntiShaderCrashModule.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
